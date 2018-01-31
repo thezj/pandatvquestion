@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "demo",
+    "version": "1.0.0",
+    "description": "简单的Chrome扩展demo",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+
+
+
+    "content_scripts": [{
+
+        "matches": ["https://1000.pgc.panda.tv/*"],
+        "js": ["jquery.min.js", "script.js"]
+    }]
+}
